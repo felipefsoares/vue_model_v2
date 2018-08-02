@@ -1,0 +1,28 @@
+<section class="login">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">Login</h5>
+            <form class="form-signin">
+              <div class="form-label-group">
+                <input type="text" class="form-control" v-model="user.nome" placeholder="Nome" autofocus>
+              </div>
+              <br>
+              <div class="form-label-group">
+                <input type="password" class="form-control" v-model="user.senha" placeholder="Senha">
+              </div>
+              <br>
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" v-on:click="login(user)">Entrar</button>
+              <br>
+              <a href="#/signup">É novo aqui????</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
